@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="imagem/png" href="calculadora.png" />
+    <title>Calculadora de IMC</title>
+</head>
+
+<body>
+    <section>
+
+        <header>
+            <h3>Calculadora de IMC</h3>
+        </header>
+
+        <main>
+            <!--Altura-->
+            <div class="altura">
+                <img src="altura.png" style="width: 250px" />
+                <span>
+                    Digite sua altura:
+                </span>
+                <input type="text" placeholder="Ex.: 1.75" id="altura" onkeypress="mascara()" maxlength="4" />
+            </div>
+
+            <!--Peso-->
+            <div class="peso">
+                <img src="peso.png" style="width: 250px" />
+                <span>
+                    Digite seu peso:
+                </span>
+                <input type="text" placeholder="Ex.: 80" id="peso" maxlength="6"/>
+            </div>
+
+        </main>
+
+        <div id="botoes">
+            <button id="calcular" onclick="resultado()">Calcular</button>
+            <button id="limpar" onclick="limpar()">Limpar</button>
+        </div>
+
+
+
+    </section>
+
+    <div id="resultado">
+        <span id="imc"></span>
+        <span id="classificacao"></span>
+    </div>
+
+
+    <footer>Desenvolvido por: Gabriel Grosso</footer>
+    <script src="main.js"></script>
+</body>
+</html>
